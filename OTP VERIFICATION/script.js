@@ -45,8 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 localStorage.setItem("otp", otp)
 
-                let serviceId = "SERIVCE_ID"
-                let templateId = "TEMPLATE_ID"
+                let serviceId = "YOUR_SERVICE_ID"
+                let templateId = "YOUR_TEMPLATE_ID"
 
                 emailjs.send(serviceId, templateId, {
                     name: localStorageName,
@@ -75,6 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (localStorageOtp === otp) {
                 alert("OTP Verified Successfully.")
+
+                window.Location.href="welcome.html"
             } else {
                 alert("Invalid OTP !!!")
             }
