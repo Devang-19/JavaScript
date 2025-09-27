@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <p id="text">Click Anyone of Your Choice</p>
+
+    <div class="image">
+      <a href="" onclick="rockChoice(event)"><img src="/IMAGES/Rock_image.webp" alt="Rock-Image" class="i1"></a>
+      <a href="" onclick="paperChoice(event)"><img src="/IMAGES/Paper_image.png" alt="Paper-Image" class="i2"></a>
+      <a href="" onclick="scissorChoice(event)"><img src="/IMAGES/Scissor_image.jpg" alt="Scissor-Image" class="i3"></a>
+    </div>
+
+    <div class="scoreboard">
+        <span id="userscore">User Score : 0</span>
+        <span id="computerscore">Computer Score : 0</span>
+    </div>
+    <div id="result-box">
+    Result will Appear Here
+    </div>
+
+
+    <button class="btn" onclick="reset()">RESET</button>
+
+
+<script src="script.js"></script>
+</body>
+</html>
